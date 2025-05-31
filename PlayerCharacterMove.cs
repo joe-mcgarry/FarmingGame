@@ -29,7 +29,7 @@ public partial class PlayerCharacterMove : CharacterBody2D
 	public override void _PhysicsProcess(double delta) 
 	{
 		Vector2 velocity = Velocity;
-		Vector2 directionInput = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+		Vector2 directionInput = Input.GetVector("left", "right", "up", "down");
 		isMoving = directionInput != Vector2.Zero;
 
 		if(directionInput != Vector2.Zero)
