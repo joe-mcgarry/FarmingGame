@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://buju75pvkgukb"]
 
 [ext_resource type="Script" uid="uid://douxe41uj1o6n" path="res://PlayerCharacterMove.cs" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://bpi35j2s2i5oh" path="res://Character idle walk.png" id="2_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://bpi35j2s2i5oh" path="res://Assets/Character idle walk.png" id="2_kpjcp"]
 
 [sub_resource type="Animation" id="Animation_e80uo"]
 length = 0.001
@@ -188,6 +188,7 @@ blend_point_2/node = SubResource("AnimationNodeAnimation_r3kul")
 blend_point_2/pos = Vector2(-1, 0)
 blend_point_3/node = SubResource("AnimationNodeAnimation_jatw7")
 blend_point_3/pos = Vector2(1, 0)
+blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_efikj"]
 animation = &"walk_down"
@@ -210,6 +211,7 @@ blend_point_2/node = SubResource("AnimationNodeAnimation_cgsek")
 blend_point_2/pos = Vector2(0, -1)
 blend_point_3/node = SubResource("AnimationNodeAnimation_0pi4m")
 blend_point_3/pos = Vector2(1, 0)
+blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_h84ma"]
 advance_mode = 2
@@ -249,3 +251,5 @@ parameters/conditions/isIdle = false
 parameters/conditions/isMoving = false
 parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Move/blend_position = Vector2(0, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]

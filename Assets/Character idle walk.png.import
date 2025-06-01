@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l7o5qvkh1qs4"
-path="res://.godot/imported/Farming Dude.png-d31adae44f6a4900b20f7244c78f6fd6.ctex"
+uid="uid://bpi35j2s2i5oh"
+path="res://.godot/imported/Character idle walk.png-10bc84e71e1560e6b0d6aa9854a2a407.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Farming Dude.png"
-dest_files=["res://.godot/imported/Farming Dude.png-d31adae44f6a4900b20f7244c78f6fd6.ctex"]
+source_file="res://Assets/Character idle walk.png"
+dest_files=["res://.godot/imported/Character idle walk.png-10bc84e71e1560e6b0d6aa9854a2a407.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
