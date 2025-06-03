@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx26kslrclhtd"]
+
+[ext_resource type="Texture2D" uid="uid://l7o5qvkh1qs4" path="res://Assets/Farming Dude.png" id="1_okrnj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijv5j"]
+atlas = ExtResource("1_okrnj")
+region = Rect2(7, 334, 162, 145)
+
+[node name="House1" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(156, 133)
+polygon = PackedVector2Array(-73, 73, 75, 73, 74, 16, 73, -29, 1, -67, -71, -29, -73, 13)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(156, 133)
+texture = SubResource("AtlasTexture_ijv5j")

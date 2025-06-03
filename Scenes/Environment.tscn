@@ -1,21 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bo7qswb16db6o"]
+[gd_scene load_steps=2 format=3 uid="uid://bo7qswb16db6o"]
 
-[ext_resource type="Texture2D" uid="uid://l7o5qvkh1qs4" path="res://Assets/Farming Dude.png" id="1_ijv5j"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ijv5j"]
-atlas = ExtResource("1_ijv5j")
-region = Rect2(7, 334, 162, 145)
+[ext_resource type="PackedScene" uid="uid://cx26kslrclhtd" path="res://Scenes/house.tscn" id="1_ijv5j"]
 
 [node name="Environment" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(156, 133)
-texture = SubResource("AtlasTexture_ijv5j")
+[node name="House1" parent="." instance=ExtResource("1_ijv5j")]
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(321, 305)
-texture = SubResource("AtlasTexture_ijv5j")
+[node name="House2" parent="." instance=ExtResource("1_ijv5j")]
+position = Vector2(270, -13)
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(553, 142)
-texture = SubResource("AtlasTexture_ijv5j")
+[node name="House3" parent="." instance=ExtResource("1_ijv5j")]
+position = Vector2(137, 171)

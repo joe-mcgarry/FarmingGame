@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://buju75pvkgukb"]
+[gd_scene load_steps=28 format=3 uid="uid://buju75pvkgukb"]
 
 [ext_resource type="Script" uid="uid://douxe41uj1o6n" path="res://PlayerCharacterMove.cs" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://bpi35j2s2i5oh" path="res://Assets/Character idle walk.png" id="2_kpjcp"]
@@ -231,6 +231,9 @@ states/Move/node = SubResource("AnimationNodeBlendSpace2D_sg6sq")
 states/Move/position = Vector2(559, 100)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_h84ma"), "Idle", "Move", SubResource("AnimationNodeStateMachineTransition_47wu6"), "Move", "Idle", SubResource("AnimationNodeStateMachineTransition_2n1s8")]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyqiw"]
+radius = 7.0
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_kpjcp")
 
@@ -253,3 +256,6 @@ parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Move/blend_position = Vector2(0, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_kyqiw")
