@@ -1,10 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbjho1uhrsa71"]
+[gd_scene load_steps=5 format=3 uid="uid://bbjho1uhrsa71"]
 
 [ext_resource type="PackedScene" uid="uid://bo7qswb16db6o" path="res://Scenes/Environment.tscn" id="1_idj7w"]
 [ext_resource type="PackedScene" uid="uid://buju75pvkgukb" path="res://Scenes/Player.tscn" id="2_kln2b"]
+[ext_resource type="Texture2D" uid="uid://clwmprvnsjxws" path="res://Assets/chest.png" id="3_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://5iau3kf87ite" path="res://Scenes/Interactable.tscn" id="4_pbw6q"]
 
 [node name="Main" type="Node"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_kln2b")]
 
 [node name="Environment" parent="." instance=ExtResource("1_idj7w")]
+
+[node name="Chest" type="Sprite2D" parent="."]
+position = Vector2(88, 263)
+texture = ExtResource("3_rgh2o")
+hframes = 2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Chest"]
+
+[node name="Interactable" parent="Chest/StaticBody2D" instance=ExtResource("4_pbw6q")]

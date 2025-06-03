@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://5iau3kf87ite"]
+
+[ext_resource type="Script" uid="uid://ofrf6fuuhhsn" path="res://Interactable.cs" id="1_pi15k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pi15k"]
+radius = 14.0357
+
+[node name="Interactable" type="CollisionShape2D"]
+shape = SubResource("CircleShape2D_pi15k")
+script = ExtResource("1_pi15k")
